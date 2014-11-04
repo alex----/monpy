@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 A tool for monitoring python memory use and object allocation.
-Mostly glue around pyrosite, objgraph and matplotlib
+Mostly glue around pyrasite, objgraph and matplotlib
 
 Usage:
     monpy.py collect <pid> (--file=<file> | (--statsd <statsd_host> <statsd_port> <statsd_prefix>))

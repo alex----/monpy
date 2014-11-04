@@ -27,14 +27,17 @@ Usage
 
 A tool for monitoring python memory use and object allocation.
 
-Mostly glue around pyrosite, objgraph and matplotlib
+Mostly glue around pyrasite, objgraph and matplotlib
 
 Usage:
 
-    monpy.py collect <pid> [--file=<file> --time_interval=<interval> --objects --statsd
-        (<statsd_host> <statsd_port> <statsd_prefix>) --max_file_size=<max_file_size>]
+    monpy.py collect <pid> (--file=<file> | (--statsd <statsd_host> <statsd_port> <statsd_prefix>))
+        [--time_interval=<interval> --objects --max_file_size=<max_file_size>]
+    monpy.py collect <pid> (--file=<file> (--statsd <statsd_host> <statsd_port> <statsd_prefix>))
+        [--time_interval=<interval> --objects --max_file_size=<max_file_size>]
     monpy.py display [--file=<file> --plotly --plotly_username=
         <plotly_username> --plotly_api_key=<plotly_api_key> --plotly_filename=<plotly_filename>]
+    monpy.py test
 
 Options:
 
