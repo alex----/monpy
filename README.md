@@ -12,7 +12,8 @@ It can also collect python object counts (using pyrasite and GDB).
 Requirements
 ------------
 ### Platforms
-- *-inx
+- I have only tested all the functionality on ubuntu.
+- Non object collection and display has been tested on mac
 
 ### Pyrasite
 - To collect python object data you must install Pyrasite which in turn requires GDB
