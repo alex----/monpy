@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Test the functions provided by the helpers module
+Test the data collection class
 """
 import os
 from multiprocessing import Process
