@@ -9,9 +9,9 @@ import signal
 import unittest
 import uuid
 
-from monpy import main
-from options import Options
-from helpers import suppress_stdout
+from monpy.monpy import main
+from monpy.options import Options
+from monpy.helpers import suppress_stdout
 
 
 def timeout_handler(signum, frame):

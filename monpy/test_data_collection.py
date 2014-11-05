@@ -7,7 +7,7 @@ from multiprocessing import Process
 import sys
 import unittest
 import mock
-from data_collection import DataCollection
+from monpy.data_collection import DataCollection
 from copy import copy
 import random
 

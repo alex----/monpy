@@ -51,6 +51,8 @@ from display import display
 
 
 def main(options):
+    # print('__main__')
+    options = Options.from_arguments(arguments)
     if options.collecting_data:
         data_collection = DataCollection(options)
         data_collection.collect_data()
@@ -74,7 +76,17 @@ def main(options):
 
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='pymemtracker version 0.1')
-    options = Options.from_arguments(arguments)
-    main(options)
+    # print('__name__')
+    try:
+        # print(docopt)
+        arguments = docopt(__doc__, version='pymemtracker version 0.1')
+    except BaseException as err:
+        print('Bas usage:')
+        print(__doc__)
+        exit(1)
+        # print(dir(err))
+        # print(err.message)
+        # print('ffs')
+    # print(arguments)
+    main(arguments)
 

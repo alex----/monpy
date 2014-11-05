@@ -8,7 +8,7 @@ from multiprocessing import Process
 import sys
 import unittest
 import mock
-from options import Options
+from monpy.options import Options
 import random
 
 

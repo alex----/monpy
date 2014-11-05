@@ -7,7 +7,7 @@ from multiprocessing import Process
 import sys
 import unittest
 import mock
-import helpers
+import monpy.helpers
 
 
 class TestHelpers(unittest.TestCase):
