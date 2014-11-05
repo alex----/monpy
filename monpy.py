@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 """
 A tool for monitoring python memory use and object allocation.
 Mostly glue around pyrasite, objgraph and matplotlib

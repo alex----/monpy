@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 """
 A process that runs forever. So that we can practice connecting to it
 """

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 """
 Displaying module
 Really want to be able to output to consol when matplotlib is not installed
