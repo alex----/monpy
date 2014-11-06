@@ -2,7 +2,6 @@
 from setuptools import setup
 from setuptools.command.install import install
 
-
 setup(name='monpy',
       version='0.1',
       description='Python written process monitor',
