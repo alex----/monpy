@@ -34,11 +34,11 @@ class Options(object):
 
     @staticmethod
     def from_arguments(arguments):
-        required_arguments = {
+        required_arguments = set([
             'display',
             'collect',
             '--file',
-            '--time_interval'}
+            '--time_interval'])
         assert set(arguments).issuperset(required_arguments), 'missing required arguments'
         options = Options()
         options.collecting_data = arguments['collect']

@@ -77,7 +77,7 @@ def local_plot_sample_list(flat_sample_list):
     # find all keys
     all_sample_keys = (set(chain(*flat_sample_list)))
     # omit the really dull stuff
-    plotable_keys = all_sample_keys.difference({'sample_time', 'utc_time', 'create_time'})
+    plotable_keys = all_sample_keys.difference(set(['sample_time', 'utc_time', 'create_time']))
     plots = {}
     _figure, axis = plt.subplots()
 
@@ -126,7 +126,7 @@ def plotly_plot_sample_list(flat_sample_list, options):
     # find all keys
     all_sample_keys = (set(chain(*flat_sample_list)))
     # omit the really dull stuff
-    plotable_keys = all_sample_keys.difference({'sample_time', 'utc_time', 'create_time'})
+    plotable_keys = all_sample_keys.difference(set(['sample_time', 'utc_time', 'create_time']))
     data = []
     # create plot for every key
     for plotable_key in plotable_keys:
